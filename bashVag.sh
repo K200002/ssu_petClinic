@@ -15,7 +15,9 @@ sudo apt-get -y install jenkins
 echo "!!!!!!!Install maven"
 sudo apt-get -y install maven
 
-./install.sh
+PYTH_VBOX=`pwd`
+git clone https://github.com/krismal95/ssu_petClinic.git
+$PYTH_VBOX/ssu_petClinic/install.sh
 
 
 

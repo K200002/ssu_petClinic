@@ -3,7 +3,6 @@ echo "Install all"
 HOME_JENKINS=/var/lib/jenkins
 PYTH_VBOX=`pwd`
 
-git clone https://github.com/krismal95/ssu_petClinic.git
 sudo service jenkins stop
 
 sudo cp -rf $PYTH_VBOX/ssu_petClinic/jenkins /etc/default
