@@ -26,7 +26,7 @@ wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/bouncycast
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/structs.hpi
 
 
-not
+
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/ssh-credentials.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/antisamy-markup-formatter.hpi
 
@@ -35,10 +35,11 @@ wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/antisamy-m
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/credentials.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/apache-httpcomponents-client-4-api.hpi
 
-not
-wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-scm-step.hpi
+
+
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-api.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-step-api.hpi
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-scm-step.hpi
 
 
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/junit.hpi
@@ -47,13 +48,15 @@ wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/display-ur
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/mailer.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/matrix-auth.hpi
 
-#wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/
-
 
 
 
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/matrix-project.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/jsch.hpi
+
+
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/scm-api.hpi
+
 
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/git-client.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/git.hpi
