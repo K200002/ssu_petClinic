@@ -21,13 +21,13 @@ wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/script-sec
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/command-launcher.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/bouncycastle-api.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/structs.hpi
-#wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/
-#wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/ssh-credentials.hpi
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/antisamy-markup-formatter.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/credentials.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/apache-httpcomponents-client-4-api.hpi
-#wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/
-#wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/
-#wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-api.hpi
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-scm-step.hpi
+wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/workflow-step-api.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/junit.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/windows-slaves.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/display-url-api.hpi
@@ -39,6 +39,8 @@ wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/jsch.hpi
 
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/git-client.hpi
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/git.hpi
+
+
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/JDK_Parameter_Plugin.hpi
 sudo chown -R jenkins:jenkins $HOME_JENKINS/plugins/*
 
