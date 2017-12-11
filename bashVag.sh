@@ -19,7 +19,7 @@ sudo cp -rf $PYTH_VBOX/ssu_petClinic/jenkins /etc/default
 sudo chown -R jenkins:jenkins /etc/default/jenkins
 
 sudo mkdir $HOME_JENKINS/users
-sudo cp -rf $PYTH_VBOX/ssu_petClinic/users/* $HOME_JENKINS/users
+sudo cp -rf $PYTH_VBOX/ssu_petClinic/users/* $HOME_JENKINS/users/admin
 sudo chown -R jenkins:jenkins $HOME_JENKINS/users/*
 sudo chown -R jenkins:jenkins $HOME_JENKINS/users
 
