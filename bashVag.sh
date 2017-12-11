@@ -12,18 +12,18 @@ sudo service jenkins stop
 git clone https://github.com/krismal95/ssu_petClinic.git
 
 HOME_JENKINS=/var/lib/jenkins
-
-ABSOLUTE_FILENAME=`readlink -e "$0"`
-echo $ABSOLUTE_FILENAME
-
-DIRECTORY=`dirname "$ABSOLUTE_FILENAME"` 
-echo $DIRECTORY
+PYTH_VBOX=`pwd`
 
 sudo mkdir $HOME_JENKINS/jobs
-sudo cp -rf $DIRECTORY/ssu_petClinic/jenkins /etc/default
+sudo cp -rf $PYTH_VBOX/ssu_petClinic/jenkins /etc/default
 sudo chown -R jenkins:jenkins /etc/default/jenkins
 
-sudo cp -rp $DIRECTORY/ssu_petClinic/jobs/* $HOME_JENKINS/jobs
+sudo mkdir $HOME_JENKINS/users
+sudo cp -rf $PYTH_VBOX/ssu_petClinic/users/* $HOME_JENKINS/users
+sudo chown -R jenkins:jenkins $HOME_JENKINS/users/*
+sudo chown -R jenkins:jenkins $HOME_JENKINS/users
+
+sudo cp -rp $PYTH_VBOX/ssu_petClinic/jobs/* $HOME_JENKINS/jobs
 sudo chown -R jenkins:jenkins $HOME_JENKINS/jobs/*
 sudo chown -R jenkins:jenkins $HOME_JENKINS/jobs
 
@@ -31,6 +31,8 @@ wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/JDK_Parame
 wget -N -P $HOME_JENKINS/plugins http://updates.jenkins-ci.org/latest/git.hpi
 sudo chown -R jenkins:jenkins $HOME_JENKINS/plugins/*
 
+sudo iptables -I INPUT 1 -p tcp --dport 8080 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 8090 -j ACCEPT
 
 sudo service jenkins start
 
